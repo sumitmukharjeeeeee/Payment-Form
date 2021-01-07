@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <form action="">
+      <h1 class="main_heading">Payment Form</h1>
+<hr>
+      <p>Required fields are followed by *</p>
+      <h2>Contact Information</h2>
+
+      <p>Name:* <input type="text" name="name" placeholder="Enter your Name" required /></p>
+      <fieldset>
+        <legend>Gender</legend>
+
+        <p>
+          Male <input type="radio" name="gender" required /> Female
+          <input type="radio" name="gender" required />
+        </p>
+      </fieldset>
+
+      <p>
+        Address:
+        <textarea
+          name="address"
+          id="address"
+          cols="100"
+          rows="8"
+          placeholder="Enter your Address"
+          required
+        ></textarea>
+      </p>
+
+      <p>Email: <input type="email" name="email" id="" placeholder="xxx@xxmail.com" required /></p>
+
+      <p>
+        Pincode: <input type="number" name="pincode" id="pincode" placeholder="123456" required />
+      </p>
+
+      <h2>Payment Information</h2>
+      <p>
+        Card Type:
+
+        <select name="card_type" id="card_type">
+          <option value="">--Select a Card Type--</option>
+          <option value="">Visa</option>
+          <option value="">MasterCard</option>
+          <option value="">Amex</option>
+          <option value="">Rupay</option>
+          <option value="">Diner's Club International</option>
+          <option value="">JCB</option>
+        </select>
+      </p>
+<img src="./amex.png" alt="amexLogo" class="amex-Logo">
+<img src="./mastercard.jpg" alt="mastercardLogo" class="mastercardLogo">
+<img src="./visa.png" alt="visaLogo" class="visaLogo">
+<img src="./rupay.png" alt="rupayLogo" class="rupayLogo">
+<img src="./dinersclub.svg" alt="dinerClubLogo" class="dinersclubLogo">
+<img src="./jcb.png" alt="jcb" class="jcbLogo">
+      <p>
+        card Number
+        <input type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444" required />
+      </p>
+      <p>
+        Card Expiry
+        <input type="month" name="card_expiry" id="card_expiry"  required />
+      </p>
+
+      <p>CVV <input type="password" name="cvv" id="cvv" placeholder="123" required /></p>
+
+      <input type="submit" value="Pay Now" />
+    </form>
+    </div>
+  </body>
+</html>
